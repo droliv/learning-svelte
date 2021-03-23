@@ -1,13 +1,28 @@
 <script>
-	export let name;
+	// export let name;
+	// let count = 0;
+
+	// function handleClick() {
+	// 	count += 1;
+	// }
+	import Menu from './template/Menu.svelte'
+	import Content from './template/Content.svelte'
 </script>
 
-<main>
+<Menu logged = true />
+<Content/>
+
+
+
+<!-- <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+	<button on:click={handleClick}>
+		Clicked {count} {count === 1 ? 'time' : 'times'}
+	</button>
+</main> -->
 
-<style>
+<!-- <style>
 	main {
 		text-align: center;
 		padding: 1em;
@@ -27,4 +42,4 @@
 			max-width: none;
 		}
 	}
-</style>
+</style> -->
